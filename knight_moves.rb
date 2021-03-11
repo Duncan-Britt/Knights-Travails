@@ -119,4 +119,4 @@ class Knight
 end
 
 knite = Knight.new
-puts knite.current_spot.pointers[1]
+puts knite.current_spot.pointers[1].coordinates
