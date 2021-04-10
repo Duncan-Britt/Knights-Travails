@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-
+# test
 require 'YAML'
 
 KNIGHT_MOVES = YAML.load_file('./knight_moves.yml')
@@ -43,7 +43,7 @@ def level_order(current_spot, desired_spot, queue=[current_spot], steps=[current
   end
 
   next_spot_to_check = queue.shift
-  
+
   KNIGHT_MOVES[current_spot].each { |ref| queue << ref }
   level_order(next_spot_to_check, desired_spot, queue, steps)
 end
